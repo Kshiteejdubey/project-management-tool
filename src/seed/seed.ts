@@ -6,7 +6,7 @@ import Project from "../models/Project";
 import Task from "../models/Task";
 
 const run = async () => {
-  const uri = process.env.MONGODB_URI) || "mongodb://localhost:27017/project_tool";
+  const uri = process.env.MONGODB_URI|| "mongodb://localhost:27017/project_tool";
   await mongoose.connect(uri);
   await User.deleteMany({});
   await Project.deleteMany({});
